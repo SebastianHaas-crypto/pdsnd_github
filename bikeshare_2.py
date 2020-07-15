@@ -39,7 +39,7 @@ Please Enter abbreviation. ')
             city = 'washington'
             text_OK = True
         else:
-            print('\nInput for city selection could not be evaluated. Please check for typing errors. ')
+            print('\nInput for city selection could not be evaluated. Please enter valid abbreviation and check for typing errors. ')
             conf_request = input(cancel_text)
             if conf_request.lower() == 'n':
                 return
