@@ -39,7 +39,7 @@ Please Enter abbreviation. ')
             city = 'washington'
             text_OK = True
         else:
-            print('\nInput for city selection could not be evaluated. Please check for typing errors. ')
+            print('\nInput for city selection could not be evaluated. Please enter valid abbreviation and check for typing errors. ')
             conf_request = input(cancel_text)
             if conf_request.lower() == 'n':
                 return
@@ -101,7 +101,7 @@ Please enter specific day as number (Monday = 1 ... Sunday = 7) or enter "8" to 
                 if conf_input.lower() == 'y':
                     if day == '5':
                         print("Thank god it's friday !")
-                        time.sleep(1)
+                        time.sleep(2)
                     break
                 else:
                     text_OK = False
@@ -276,7 +276,7 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 #   maximal possible age assumed for user
-    max_age = 100
+    max_age = 105
     # Display counts of user types
     user_types = df['User Type'].value_counts()
     print('Different user types and counts of user types:\n', user_types)
