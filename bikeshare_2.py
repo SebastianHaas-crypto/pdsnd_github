@@ -276,7 +276,7 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 #   maximal possible age assumed for user
-    max_age = 100
+    max_age = 105
     # Display counts of user types
     user_types = df['User Type'].value_counts()
     print('Different user types and counts of user types:\n', user_types)
