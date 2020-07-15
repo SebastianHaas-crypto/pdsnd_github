@@ -101,7 +101,7 @@ Please enter specific day as number (Monday = 1 ... Sunday = 7) or enter "8" to 
                 if conf_input.lower() == 'y':
                     if day == '5':
                         print("Thank god it's friday !")
-                        time.sleep(1)
+                        time.sleep(2)
                     break
                 else:
                     text_OK = False
